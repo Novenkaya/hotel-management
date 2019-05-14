@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content-title %}
+    <h1>Страницы не найдены. (404 Error)</h1>
+{% endblock %}
+{% block main-content %}
+    <p><strong>Это не страница, которую вы ищете.</strong></p>
+    <p>Нажмите здесь, чтобы перейти на домашнюю страницу. <a href="{% url 'index' %}">дом</a> </p>
+{% endblock %}

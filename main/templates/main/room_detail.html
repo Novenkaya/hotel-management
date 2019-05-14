@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content-title %}
+    <h1>{{ title }}</h1>
+{% endblock %}
+<!-- TODO Work on FrontEnd -->
+{% block main-content %}
+    <div class="row">
+        <div class="card text-left col-md-6">
+
+            <div class="card-header text-center">
+                <!-- Room Photo -->
+                {% load static %}
+                <img src="#" alt="Room" style="width:200px; height=200px;">
+            </div>
+            <div class="card-header bg-info text-white">Номер комнаты:{{ room.room_no }}</div>
+            <div class="card-body bg-info text-white">Тип комнаты: {{ room.get_room_type_display }}</div>
+            <div class="card-footer bg-info text-white">Доступность: {% if room.availability %}Да {% else %} Нет {% endif %}</div>
+            <div class="card-footer bg-info text-white">  услуги: {{ room.display_facility }} </div>
+
+            <div class="card-footer bg-info text-white">
+                {% if room.reservation %}
+                  Бронирование:
+                    <a href="{% url 'reservation-detail' room.reservation_id %}"class="text-white">{{ room.reservation }} </a><br/>
+                {% endif %}
+            </div>
+        </div>
+{% endblock %}

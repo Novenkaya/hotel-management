@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content-title %}
+    <h1>Информация о профиле</h1>
+{% endblock %}
+
+{% block main-content %}
+    <img src="{{ MEDIA_URL }}{{ information.profile_picture }}"/><br/>
+    имя пользователя: {{ user_information.username }}<br/>
+    Полное имя: {{ information.first_name }} {{ information.middle_name }} {{ information.last_name }}<br/>
+    Контактный номер: {{ information.contact_no }}<br/>
+    Электронная почта:{{ information.email_address }}<br/>
+    Адрес: {{ information.address }}<br/>
+{% endblock %}

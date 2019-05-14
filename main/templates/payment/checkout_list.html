@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+<!--ToDo Work on Front end -->
+{% block content-title %}
+    <h1>{{ title }}</h1>
+{% endblock %}
+{% block main-content %}
+    {% if checkout_list %}
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Check-Out идентификатор</th>
+                <th>Связанная регистрация</th>
+                <th>Остаться долго</th>
+                <th>Общая сумма</th>
+                <th>Сумма оплаты</th>
+                <th>Время отъезда</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for check_out in checkout_list %}
+            <tr>
+                <td><a href="{% url 'check_out-detail' check_out.id %}">{{ check_out }}</a></td>
+                <td><a href="{% url 'check_in-detail' check_out.check_in.id %}">{{ check_out.check_in }}</a></td>
+                <td>{{ check_out.stay_duration }}</td>
+                <td>{{ check_out.total_amount }}</td>
+                <td>{{ check_out.pay_amount }}</td>
+                <td>{{ check_out.check_out_date_time }}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>Регистраций нет</p>
+    {% endif %}
+{% endblock %}

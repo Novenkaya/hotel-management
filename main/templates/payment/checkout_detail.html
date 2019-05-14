@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content-title %}
+    <h1>Дата выезда: {{ checkout.id }}</h1>
+{% endblock %}
+<!-- TODO Work on FrontEnd -->
+{% block main-content %}
+  регистрация:
+    <a href="{% url 'check_in-detail' checkout.check_in.id %}">{{ checkout.check_in }}</a> <br/>
+    продолжительность: {{ checkout.stay_duration }}<br/>
+    Общая сумма: {{ checkout.total_amount }}<br/>
+    Сумма платежа: {{ checkout.pay_amount }} <br/>
+    Дата отправления = {{ checkout.check_out_date_time }}<br/>
+    Тексерілді:
+    {% if staff.count == 0 %} {{ checkout.user }}{% else %}
+        <a href="{% url 'staff-detail' staff.staff_id %}">{{ staff }}</a>
+    {% endif %}
+{% endblock %}
