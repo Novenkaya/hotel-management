@@ -239,7 +239,7 @@ pbr==1.10.0
 pep8==1.7.1
 pickleshare==0.7.5
 pilkit==2.0
-Pillow==6.0.0
+Pillow==6.2.0
 plotly==3.7.1
 pluggy==0.9.0
 poyo==0.4.2
