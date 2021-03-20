@@ -175,7 +175,7 @@ itypes==1.1.0
 jdcal==1.4
 jedi==0.13.3
 jieba==0.39
-Jinja2==2.10
+Jinja2==2.11.3
 jinja2-time==0.2.0
 jmespath==0.9.4
 json-tricks==3.13.1
