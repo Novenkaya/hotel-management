@@ -294,7 +294,7 @@ pyview==1.0.2
 PyVISA==1.9.1
 pywin32==224
 pywinpty==0.5.5
-PyYAML==3.11
+PyYAML==5.4
 pyzmq==18.0.1
 qtconsole==4.4.3
 qtmodern==0.1.4
