@@ -223,7 +223,7 @@ numexpr==2.6.9
 numpy==1.16.2
 oauthlib==1.0.3
 ogr==0.2.0
-opencv-python==4.1.0.25
+opencv-python==4.1.1.26
 openpyxl==2.6.2
 otree-boto2-shim==0.3.2
 otree-core==1.4.49
