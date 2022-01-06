@@ -41,7 +41,7 @@ bson==0.5.8
 bumpversion==0.5.3
 bz2file==0.98
 cached-property==1.5.1
-celery==4.3.0
+celery==5.2.2
 certifi==2017.11.5
 cffi==1.10.0
 channels==0.17.3
