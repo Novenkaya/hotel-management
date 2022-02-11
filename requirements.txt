@@ -341,7 +341,7 @@ tornado==6.0.2
 tox==2.1.1
 tqdm==4.31.1
 traitlets==4.3.2
-Twisted==16.2.0
+Twisted==22.1.0
 txaio==2.5.1
 tzlocal==1.4
 unicodecsv==0.14.1
