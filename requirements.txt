@@ -57,7 +57,7 @@ colorize==1.0.4
 configparser==3.7.4
 constantly==15.1.0
 contextlib2==0.5.4
-cookiecutter==1.6.0
+cookiecutter==2.1.1
 cookies==2.2.1
 coreapi==2.3.3
 coreschema==0.0.4
