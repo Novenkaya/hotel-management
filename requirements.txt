@@ -51,7 +51,7 @@ click==6.7
 clickmodels==2.0.0
 clint==0.5.1
 clipboard==0.0.4
-codecov==2.0.15
+codecov==2.0.16
 colorama==0.3.7
 colorize==1.0.4
 configparser==3.7.4
