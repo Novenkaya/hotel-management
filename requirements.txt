@@ -213,7 +213,7 @@ mpg123==0.4
 msgpack==0.6.1
 msgpack-numpy==0.4.4.2
 msgpack-python==0.4.8
-nbconvert==5.4.1
+nbconvert==6.5.1
 nbformat==4.4.0
 networkx==2.3
 nltk==3.4.1
